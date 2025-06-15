@@ -1,10 +1,21 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Felipa&display=swap');
+
+.felipa-regular {
+  font-family: "Felipa", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
 *{
     margin:0px;
     padding: 0px;
     
 }
+
+
 
 html, body {
     min-height: 100vh;
