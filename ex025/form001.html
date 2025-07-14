@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+    input, button {
+           padding: 2px; 
+           margin: 1px 0;
+           border: 1px solid black;
+           border-radius: 5px 5px;
+           font-family: sans-serif;
+           width: 100%;
+           max-width: 300px;
+    }
+    button {
+        background-color: #6c63ff;
+        color: white;
+        border: none;
+        cursor: pointer;
+        transition: background 0.3s ease;
+    }
+    button:hover {
+        background-color: #5146d3;
+    }
+    </style>
+</head>
+<body>
+    <h1>Meu Primeiro Formulario</h1>
+    <form action="cadastro.php">
+        <p><label for="inome">Nome </label> <!--dentro do for tem que sempre por o a inf do id-->
+            <input type="text" name="Nome" id="inome"></p>
+        <p><label for="isobrenome">Sobrenome </label>
+            <input type="text" name="Sobrenome"  id="isobrenome"></p>
+        <form action=""></form>
+        <button type="submit">Enviar</button>
+
+    </form>
+</body>
+</html>
