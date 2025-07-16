@@ -7,20 +7,23 @@
 </head>
 <body>
     
-  <h2>Login</h2>
-  <form action="cadastro.js" method="post">
-  <label for="iname">Usuário</label>
-  <input type="text" name="usu" placeholder="Digite seu Nome" id="iname">
+   
+     <form id="loginForm" onsubmit="capturarDados(event)" method="post">
+     <h2>Login</h2>
+  <p>
+      <label for="name">Usuário</label>
+      <input type="text" name="name" placeholder="Digite seu Nome" id="name">
+  </p>
 
-  <label for="isen">Senha:</label>
-  <input type="password" name="senha" placeholder="Digite sua Senha">
+  <p>
+      <label for="isen">Senha:</label>
+      <input type="password" name="senha" placeholder="Digite sua Senha">
+  </p>
   <button type="submit">Entrar</button>
   <button type="reset">Limpar</button>
-
-
-
-
 </form>
-    
+
+
+
 </body>
 </html>
