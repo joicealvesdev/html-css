@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=[device-width], initial-scale=1.0">
+    <title>Formulario</title> 
+    <style>
+    div {
+        padding: 1px;
+        
+    }
+
+    </style>
+</head>
+<body>
+    <h1>Login de Teste</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+      <div>
+        <label for="inone">Nome</label>
+        <input type="text" name="nome" id="inome" required autocomplete="name" placeholder="Nome completo" maxlength="15" minlength="5"> 
+     <div>
+     
+      <div>
+        <label for="imedia">Média</label>
+        <input type="number" name="media" id="imedia" min="0" max="10" placeholder="0 a 10" step="0.1" required>
+      </div>
+
+      <div>
+        <label for="imes">Periodo Letivo</label>
+        <input type="month" name="mes" id="imes" value="2025-7" required>
+      </div>
+
+       <div>
+           <label for="idia">Dia da Prova</label>
+           <input type="date" name="dia" id="idia" value="2025-07-16">
+       </div>
+
+      <div>
+       <label for="isen">Senha</label>
+       <input type="password" name="senha" id="isen" required autocomplete="current-password" placeholder="Digite sua Senha" minlength="8" maxlength="15">
+      </div>
+      
+
+     
+
+       <div>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+
+      </div>
+
+
+
+
+    </form>
+</body>
+</html>
