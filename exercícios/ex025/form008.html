@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Teste de Formularios com Soma</h1>
+    <form action="cadastro.php" method="post">
+
+    <div>
+        <label for="inu1">Número 1:</label>
+        <input type="number" name="inu1" id="inu1" min="0" max="50" required oninput="isoma.innerHTML = Number (inu1.value) + Number(inu2.value)">
+    </div>
+
+   <div>
+        <label for="inu2">Número 2:</label>
+        <input type="number" name="inu2" id="inu2" min="0" max="50" required oninput="isoma.innerHTML = Number (inu1.value) + Number(inu2.value)">
+    </div>
+   
+      <div>
+          <label for="isoma">Soma</label>
+          <output  name="Soma"  id="isoma">0</output>
+     </div>
+
+    <div>
+   <input type="submit" value="Enviar">
+   <input type="reset" value="Limpar">
+   </div>
+
+
+
+
+
+
+
+
+    </form>
+</body>
+</html>
